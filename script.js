@@ -1,6 +1,6 @@
 let currentData = null;
 let started = false;
-const playlist = ['/audio/intro.wav', '/audio/track1.wav', '/audio/bulletin.wav', '/audio/track2.wav', '/audio/track3.wav', '/audio/track4.wav'];
+const playlist = ['./audio/intro.wav', './audio/track1.wav', './audio/bulletin.wav', './audio/track2.wav', './audio/track3.wav', './audio/track4.wav'];
 
 async function loadLive() {
   const res = await fetch('/api/live');
@@ -37,7 +37,7 @@ function startLinearRadio() {
   const now = new Date();
   const trackIndex = Math.floor((now.getMinutes() % (playlist.length * 2)) / 2) % playlist.length;
   player.src = playlist[trackIndex];
-  player.currentTime = 0;
+  player.currentTime = 0; player.volume = 1;
   player.play().catch(() => {});
   player.onended = () => {
     const currentPath = new URL(player.src).pathname;
@@ -46,7 +46,7 @@ function startLinearRadio() {
     player.src = next;
     player.play().catch(() => {});
   };
-  btn.textContent = 'No ar';
+  btn.innerHTML = '<span class="radio-icon">📻</span><span>No ar</span>'; alert('Som iniciado. Se ficar mudo, aumenta o volume do celular e toca novamente no player.');
 }
 
 function bindForms() {
