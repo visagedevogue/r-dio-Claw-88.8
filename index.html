@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Claw Radio</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="hero card">
+      <div>
+        <p class="eyebrow">EMISSORA VIVA</p>
+        <h1 id="station-name">World Claw Radio</h1>
+        <p id="tagline">A rádio viva da cidade</p>
+      </div>
+      <div class="live-badge">● AO VIVO</div>
+    </header>
+
+    <section class="grid top-grid">
+      <div class="card">
+        <p class="label">Cidade</p>
+        <h2 id="city">Panambi</h2>
+        <p id="weather">22°C · céu limpo</p>
+      </div>
+      <div class="card highlight">
+        <p class="label">Tocando agora</p>
+        <h2 id="song">Golden Hour</h2>
+        <p id="artist">Claw Session</p>
+      </div>
+      <div class="card">
+        <p class="label">Programa atual</p>
+        <h2 id="program">Bom dia da cidade</h2>
+        <p id="host">Claw FM</p>
+      </div>
+    </section>
+
+    <section class="card player-card">
+      <div class="player-head">
+        <div>
+          <p class="label">Player linear</p>
+          <h3>Fluxo contínuo — sem voltar</h3>
+        </div>
+        <button id="play-live" class="radio-button" type="button" aria-label="Ouvir rádio agora">
+          <span class="radio-icon">📻</span>
+          <span>Abrir rádio</span>
+        </button>
+      </div>
+      <audio id="radio-player" preload="auto"></audio>
+      <p class="player-note">Entrou, pegou do ponto atual. Experiência de rádio viva.</p>
+    </section>
+
+    <section class="grid main-grid">
+      <div class="card span-2">
+        <p class="label">Breaking now</p>
+        <h3 id="headline">Agora no ar: música, clima, notícias e commerce local.</h3>
+        <p id="dynamic-news"></p>
+      </div>
+      <div class="card sponsor">
+        <p class="label">Patrocínio</p>
+        <h3 id="sponsor">Visage de Vogue</h3>
+      </div>
+    </section>
+
+    <section class="grid split-grid">
+      <form class="card" id="request-form">
+        <p class="label">Pedir música</p>
+        <input name="name" placeholder="Seu nome" />
+        <input name="city" placeholder="Sua cidade" />
+        <input name="song" placeholder="Música pedida" required />
+        <input name="dedication" placeholder="Dedicação / recado" />
+        <button type="submit">Enviar pedido</button>
+      </form>
+
+      <form class="card" id="quiz-form">
+        <p class="label">Quiz do dia</p>
+        <h3 id="quiz-question">Qual tema você quer ouvir amanhã?</h3>
+        <input name="name" placeholder="Seu nome" />
+        <input name="answer" placeholder="Sua resposta" required />
+        <button type="submit">Responder quiz</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <p class="label">Grade do dia</p>
+      <div id="schedule" class="schedule"></div>
+    </section>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

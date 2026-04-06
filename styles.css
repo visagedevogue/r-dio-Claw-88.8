@@ -1,0 +1,55 @@
+:root {
+  --bg: #07111f;
+  --card: rgba(255,255,255,0.06);
+  --line: rgba(255,255,255,0.12);
+  --text: #eef4ff;
+  --muted: #9db0cc;
+  --accent: #6ee7ff;
+  --accent2: #ffcc66;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(circle at top, #102443 0%, var(--bg) 60%);
+  color: var(--text);
+}
+.app { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+}
+.hero { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
+.eyebrow, .label { color: var(--accent); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; }
+.live-badge {
+  color: #07111f; background: linear-gradient(90deg, #ff7a7a, #ffcc66);
+  padding: 10px 14px; border-radius: 999px; font-weight: 800;
+}
+.grid { display:grid; gap:16px; margin-bottom:16px; }
+.top-grid { grid-template-columns: repeat(3, 1fr); }
+.main-grid { grid-template-columns: 2fr 1fr; }
+.split-grid { grid-template-columns: 1fr 1fr; }
+.highlight { background: linear-gradient(135deg, rgba(110,231,255,0.18), rgba(255,204,102,0.12)); }
+.span-2 { min-height: 150px; }
+input, button {
+  width:100%; padding:12px 14px; margin-top:10px; border-radius: 12px; border:1px solid var(--line);
+  background: rgba(255,255,255,0.05); color: var(--text);
+}
+button { background: linear-gradient(90deg, var(--accent), #7df5c7); color:#07111f; font-weight:800; cursor:pointer; }
+.radio-button { width:auto; display:flex; align-items:center; gap:10px; padding:12px 18px; }
+.radio-icon { font-size: 22px; }
+.player-card { margin-bottom: 16px; }
+.player-head { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.player-note { color: var(--muted); margin-top: 12px; }
+audio { width: 100%; margin-top: 14px; }
+.schedule { display:grid; gap:10px; }
+.schedule-item { display:flex; justify-content:space-between; padding:12px 14px; border:1px solid var(--line); border-radius:14px; }
+.notice { color: var(--accent2); font-size: 14px; margin-top: 10px; }
+@media (max-width: 820px) {
+  .top-grid, .main-grid, .split-grid { grid-template-columns: 1fr; }
+  .hero { flex-direction:column; align-items:flex-start; gap:14px; }
+}

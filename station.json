@@ -1,0 +1,65 @@
+{
+  "name": "GravaBoi 88.8 FM",
+  "tagline": "A rádio viva da cidade com frequência de prosperidade",
+  "city": "Panambi",
+  "weather": "22°C · céu limpo",
+  "sponsor": "Patrocínio master: Visage de Vogue",
+  "headline": "Agora no ar: GravaBoi 88.8 FM — música, clima, notícias e commerce local.",
+  "quizQuestion": "Qual tema você quer ouvir amanhã? Moda, negócios ou cidade?",
+  "schedule": [
+    {
+      "time": "06:00",
+      "title": "Bom dia da cidade",
+      "host": "Claw FM"
+    },
+    {
+      "time": "09:00",
+      "title": "Radar local + clima",
+      "host": "Claw FM"
+    },
+    {
+      "time": "12:00",
+      "title": "Giro do comércio",
+      "host": "Claw FM"
+    },
+    {
+      "time": "15:00",
+      "title": "Pedidos dos ouvintes",
+      "host": "Claw FM"
+    },
+    {
+      "time": "18:00",
+      "title": "Rush hour + notícias",
+      "host": "Claw FM"
+    },
+    {
+      "time": "21:00",
+      "title": "Night flow",
+      "host": "Claw FM"
+    }
+  ],
+  "rotation": [
+    {
+      "title": "Golden Hour",
+      "artist": "Claw Session"
+    },
+    {
+      "title": "City Lights",
+      "artist": "Panambi Vibes"
+    },
+    {
+      "title": "Runway Dreams",
+      "artist": "Visage Sounds"
+    },
+    {
+      "title": "Midnight Market",
+      "artist": "Downtown FM"
+    }
+  ],
+  "news": [
+    "Breaking: mercado acompanha dólar e movimentos do varejo em tempo real.",
+    "Agora: radar local detecta oportunidades de campanhas e ofertas na cidade.",
+    "No mundo: eventos globais podem afetar consumo, câmbio e comportamento de compra.",
+    "Alerta econômico: IA pode transformar mídia local em canal de comércio vivo."
+  ]
+}
