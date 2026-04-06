@@ -40,8 +40,8 @@ input, button {
   background: rgba(255,255,255,0.05); color: var(--text);
 }
 button { background: linear-gradient(90deg, var(--accent), #7df5c7); color:#07111f; font-weight:800; cursor:pointer; }
-.radio-button { width:auto; display:flex; align-items:center; gap:10px; padding:12px 18px; }
-.radio-icon { font-size: 22px; }
+.radio-button { width:100%; display:flex; justify-content:center; align-items:center; gap:12px; padding:22px 24px; font-size:22px; border-radius:18px; }
+.radio-icon { font-size: 34px; }
 .player-card { margin-bottom: 16px; }
 .player-head { display:flex; justify-content:space-between; align-items:center; gap:12px; }
 .player-note { color: var(--muted); margin-top: 12px; }
